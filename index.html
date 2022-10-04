@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Loaspra's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Santiago Madariaga</h1>
+								<p>I am a Data Scientist with strong Math and engineering background. 
+									
+								</p>
+								<p>Solid experience and with passion for designing neural networks</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Introduction</h2>
+								<p>I use Python as my main language for almost all of the worflows I have.
+									However, I also use R to perform data exploration (EDA) and also to create
+									visualistaions and plots for presentations.
+								</p>
+								<h3 class="major">Main skillset</h3>
+								<span class="image main"><img src="images/main_sk.png" alt="" /></span>
+								<p>I have extensive experience in the design, 
+									testing and deployment of predictive models. 
+									I got this experience by participating in Kaggle competitions, 
+									learning with Google Brain training material, among others. 
+									Everything I learned allowed me to carry out different projects 
+									and jobs for companies and individuals, giving me an accumulated experience
+								of 3 years in the field.</p>
+
+								<p> I use Jupyter Notebooks in order to design 
+									and testing the base model, as well as designing a 
+									prototype of the data pipelines. 
+									I usually work on 2 platforms for this: VertexAI 
+									from Google Cloud and cloud9 from AWS.</p>
+									<h3 class="major">Big Data Tools and Environments</h3>
+									<span class="image main"><img src="images/deply.png" alt="" /></span>
+								<p>Most of the times, the data I work with consists of several Thousands of Gigabytes (TB).
+								Specially when training the model. This data needs to be processed in order to be used as
+								training set. For Big Data I use the following technologies and packages.</p>
+								
+								<h6 class = "major">You can check out my work <a href="#work">here</a></h6>
+								<!-- <ul>
+									<li>Apache Spark</li>
+									<li>Kafka Clusters</li>
+									<li>Ray (for Hyperparameter tunning)</li>
+									<li>Dask</li>
+								</ul>
+
+								
+								<h3 class="major">Machine Learning</h3>
+								<ul>
+									<li>TensorFlow: Core and Keras</li>
+									<li>PyTorch</li>
+								</ul>
+								<h3 class="major">Data Engineering</h3>
+								<ul>
+									<li>Numpy</li>
+									<li>Pandas</li>
+									<li>R: Tydiverse</li>
+									<li>Python Native libraries (re, datetime, etc.)</li>
+								</ul>
+							
+							<h3 class="major">Databases</h3>
+
+								<p>I have worked with both SQL and NoSQL databases. In the following list I mention with which I have worked.</p>
+
+								<p>Relational (SQL)</p>
+								<ul>
+									<li>Postgres</li>
+									<li>MySQL</li>
+									<li>Microsoft SQL</li>
+									<li>Amazon RDS</li>
+									<li>BigQuery</li>
+								</ul>
+
+								<p>No relational (NoSQL)</p>
+								<ul>
+									<li>Redis</li>
+									<li>SPARQL</li>
+									<li>MongoDB</li>
+									<li>Cassandra</li>
+								</ul> -->
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">My work</h2>
+								
+								<p>For the previous works I have used keras, 
+									a high-level layer to design both the architecture 
+									of the model as well as the preprocessing layer and the creation of features. I use XGBoosted models all the time, from classifiers to regressors. However. my main forte is Deep Learning.
+									</p>
+								<p>Here are some models I designed for my projects and past jobs.</p>
+								<h3 class="major">Sales Forecasting</h3>
+								<p>My task was to design a predictive model of sales by product of a retail chain. 
+									The dataset consists of the history of sales by product, region, category and others.
+									This case consists of temporary (historical) data, so I designed a pipeline to normalize and deseasonalize the data.</p>
+								<div class = "row">
+									<div class = "column">
+										<p>Seasonal decompose of the weekly sales.</p>
+										<!-- Image of the Seasonal decompose -->
+										<span class="image main"><img src="images/models/sales_seasonal.png" alt="" /></span>
+									</div>
+									<div class="column">
+										<p>The final predictions are shown below.</p>
+										<!-- Image of the predictions -->
+										<span class="image main"><img src="images/models/sales_final.png" alt="" /></span>
+									</div>
+								</div>
+								<br />
+								<h3 class="major">Movie Recommendation System</h3>
+								<a href="https://github.com/loaspra/commend-syst">Source Code</a>
+								<p> In this project I designed a Deep Learning approach to movies recommendation on pair with the user-movies sparse matrix
+									The goal is to show a ranking of the movies for each user with the highest predicted ratings (predictions made by the model).</p>
+									<!-- Image : model's arquitecture -->
+									<p>The arquitecture of the final model is shown below:</p>
+									<span class="image main"><img src="images/models/commend_model.png" alt="" /></span>
+								<p>This is one of the most interesting models I have done. 
+									In order to achieve my performance goal, I had to deal with inmense sparse matrix:
+									The average user watches no more than 50 movies normally, however there are milllios of movies. Some of them
+									with billions of views, whereas others with mere thousands. With feature engineering and data wrangling (including densing the inputs) my model
+									achieved great results. And currently is pipelined to be deployed on a web-based app.
+								</p>
+								<br />
+								<h3 class="major">Weather Forecasting for Peruvian Amazon</h3>
+								<a href="https://github.com/loaspra/big-data-hmw1">Source Code</a>
+								<p>Together with other students from my university, 
+									we designed an end-to-end machine learning solution to provide 
+									forecasting services for meteorological phenomena in Amazonian towns. 
+									The following model predicts the temperature. 
+									Besides this one, we design models to predict radiation, 
+									precipitation and wind speed vector.</p>
+									
+								<!-- Image of the Predictions -->
+								<div class = "row">
+									<div class = "column">
+										<p>Normalized feature columns</p>
+										<span class="image main"><img src="images/models/weather_features.png" alt="" /></span>
+									</div>
+									<div class = "column">
+										<p>Model testing</p>
+										<span class="image main"><img src="https://user-images.githubusercontent.com/40249960/177692143-8f5b979d-b57f-4b9b-88c0-76069b73e683.png" alt="" /></span>
+									</div>
+								</div>
+								<p>Instead of using an ARIMA model I proposed a supervised approach
+									and designed a neural network architecture. This implied doing 
+									more feature engineering (which I love), like encoding the datetime variable into a 
+								periodic funciton, finding the best number of lags, etc.</p>
+								<br />
+								<h3 class="major">Stroke blood Cloth Image Classfication </h3>
+								<p>This model is made in order to classify the blood clots origins in ischemic stroke
+									between two acute ischemic stroke subtypes: cardiatic and large artery atherosclerosis.</p>
+								
+									<!-- Image of the cloths -->
+								<p>The dataset consists of hundreds of full slide pictures of the blood clots. Some of them are files in the order of the 
+									gigabytes. Thus, the preprocessing layer has to be efficient and able to find the optimal region where the blood is present.</p>
+								<p>The pipeline scans the full image (from the left) and finds a region that contains a considerable 
+									ammount of blood.</p>
+								<div class = "row">
+									<div class = "column">
+										<span class="image main"><img src="images/models/full_img.jpg" alt="" /></span>
+									</div>
+									<div class = "column">
+										<span class="image main"><img src="images/models/slide.jpg" alt="" /></span>
+										<p>Arquitecture of model: Convolutional Neural Network with dense output.</p>
+										<span class="image aux"><img src="images/models/cnn.png" alt="" /></span>
+									</div>
+								<!-- Image : model's arquitecture -->
+								<h6 class = "major">My contact info is over <a href="#contact">here</a></h6>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<p>Currently I am open to job offers both full and part time, and my disponibility is inmmediate. 
+									However I would prefeer a full time - full remote position.
+								</p>
+								<p>
+									I would be more than happy if you request more information about my work.
+								</p>
+								<p>
+									Also, schedule a virtual interview to discuss my past and current projects, expereience and skills would be amazing!
+								</p>
+								<h3 class="major">Social Media</h3>
+								<p>These are kaggle and github accounts:</p>
+								<ul class="icons">
+									<li><a href="https://www.kaggle.com/nicolcerv" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+									<li><a href="https://github.com/loaspra" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+								<br />
+								<p>If you prefeer, you can text me at my phone to schedule a call or whatsapp me, my phone number is the following.</p>
+									<a class="icon brands fa-whatsapp"> (+51) 989-312-330<span class="label">Phone</span><a>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer> -->
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
